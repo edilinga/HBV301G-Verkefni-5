@@ -8,21 +8,19 @@
 
 ## Verkaskipting og rýni
 
-| Verkþáttur | Framlag hópmeðlima | Rýni og úrvinnsla athugasemda (tenglar á issues/PR eftir því sem við á) |
+| Verkþáttur | Framlag hópmeðlima | Rýni og úrvinnsla athugasemda |
 |---|---|---|
-| Gæðakröfur (PLanguage ef það er notað) | … | … |
-| Árekstrar og lausnir | … | … |
-| Viðskiptareglur og flokkun | … | … |
-| Virknikröfur, próf og rekjanleiki | … | … |
-| Samræming og lokayfirferð | … | … |
+| Gæðakröfur | Edil Inga vann gæðakröfurnar og skilgreindi mælanleg viðmið. | Yfirferð hópmeðlima. |
+| Árekstrar og lausnir | Edil Inga greindi árekstra milli gæðakrafna og lagði til lausnir. | Yfirferð hópmeðlima. |
+| Viðskiptareglur og flokkun | Gabríel skilgreindi þrjár viðskiptareglur. | Yfirferð hópmeðlima. |
+| Virknikröfur, próf og rekjanleiki | Gabríel skrifaði tvær afleiddar virknikröfur og fjögur samþykktarpróf. | Yfirferð hópmeðlima. |
+| Samræming og lokayfirferð | Sameiginlegt verkefni Edil Ingu og Gabríels. | Yfirferð á auðkennum, tenglum og samræmi milli skjala. |
 
-Lýsið hvernig þið notuðuð issues, branches, commit/push og pull requests. Hvernig rýnduð þið vinnu hvors annars og hvað breyttist eftir rýni? …
+Verkefninu var skipt niður í GitHub Issues og hvor hópmeðlimur vann að sínum verkefnum á aðskildum greinum (branches). Breytingar voru vistaðar með commit og sendar á GitHub með push. Að því loknu voru útbúnir Pull Requests til að sameina breytingarnar við main.
 
-GitHub-geymslan var stofnuð út frá sniðmáti kennara. Verkþáttum var skipt niður í Issues og unnið á aðskildum greinum.
+Edil Inga vann að gæðakröfum og árekstragreiningu en Gabríel vann að viðskiptareglum, afleiddum virknikröfum og samþykktarprófum. Við vinnuna var stuðst við fyrri verkefni til að tryggja samræmi milli krafna og eiginleika kerfisins.
 
-Við vinnslu gæðakrafna og árekstra voru breytingar vistaðar með commit, sendar á GitHub með push og Pull Requests útbúnir fyrir yfirferð og sameiningu við main.
-
-Yfirferð og úrvinnsla athugasemda verður skráð þegar hópmeðlimir hafa lokið rýni.
+Hópmeðlimir yfirfara vinnu hvors annars áður en Pull Requests eru samþykktir og sameinaðir við main.
 
 ## Ígrundun
 
