@@ -1,47 +1,52 @@
-﻿# Afleiddar virknikröfur og samþykktarpróf
+# Afleiddar virknikröfur og samþykktarpróf
 
-> Veljið tvær af [viðskiptareglunum](business-rules.md). Skráið eina sannreynanlega virknikröfu fyrir hvora reglu og tvö samþykktarpróf fyrir hvora kröfu. Endurnýta má viðeigandi virknikröfu úr fyrri vinnu með tilvísun í skráningarstað hennar.
->
-> Sýnið tengslin **regla → ferli eða verkefni notanda → virknikrafa → samþykktarpróf** með auðkennum og tenglum í reitunum hér að neðan. Ekki þarf sérstaka rekjanleikatöflu. Tilgreinið viðbótarforsendur, t.d. um villuskilaboð eða atvikaskráningu. Próf mega aðeins krefjast hegðunar sem er tilgreind í kröfunni.
+## Sameiginlegar forsendur
 
-## VK-1 — <heiti virknikröfu>
+- Vaktaskiptabeiðnir og afleysingabeiðnir tengjast ákveðnum starfsmönnum og vöktum.
+- Kerfið heldur utan um úthlutaðar vaktir starfsmanna.
+- Stjórnandi hefur heimild til að samþykkja eða hafna beiðnum.
+- Beiðnir geta verið í stöðunum „Í bið“, „Samþykkt“ eða „Hafnað“.
+- Vaktir sem enda nákvæmlega þegar önnur hefst teljast ekki skarast.
+- Þessar viðbótarforsendur eru tillögur hópsins til að skýra hegðun kerfisins.
 
-- **Viðskiptaregla (auðkenni og tengill):** …
-- **Ferli eða verkefni notanda (auðkenni/tengill):** …
-- **Virknikrafa eða tilvísun í fyrirliggjandi kröfu:** … Lýsið hvað kerfið á að gera til að styðja við regluna.
-- **Viðbótarforsendur eða tilvísun í sameiginlegar forsendur:** …
+## VK-1 — Samþykki vaktaskipta og afleysinga
 
-### SP-1 — leyfilegt eða gilt tilvik
+- **Viðskiptaregla:** VR-1
+- **Ferli:** F-2 — Samþykki eða höfnun vaktaskipta og afleysinga.
+- **Virknikrafa:** Kerfið skal halda vaktaskipta- og afleysingabeiðnum í stöðunni „Í bið“ þar til stjórnandi afgreiðir þær. Ef stjórnandi samþykkir beiðni skal kerfið breyta stöðunni í „Samþykkt“ og uppfæra vaktaskipulagið. Ef stjórnandi hafnar beiðni skal kerfið breyta stöðunni í „Hafnað“ og halda vaktaskipulaginu óbreyttu.
+- **Viðbótarforsendur:** Stjórnandi er innskráður og hefur heimild til að afgreiða beiðnina.
 
-- **Sannreynir:** VK-1
-- **Gefið (forsendur og upphafsstaða):** …
-- **Þegar (inntak eða aðgerð):** …
-- **Þá (vænt niðurstaða sem hægt er að sannreyna):** …
-
-### SP-2 — óleyfilegt tilvik eða viðeigandi jaðartilvik
+### SP-1 — Leyfilegt tilvik
 
 - **Sannreynir:** VK-1
-- **Gefið:** …
-- **Þegar:** …
-- **Þá:** …
+- **Gefið:** Starfsmaður hefur sent vaktaskiptabeiðni sem er í stöðunni „Í bið“.
+- **Þegar:** Stjórnandi samþykkir beiðnina.
+- **Þá:** Kerfið breytir stöðunni í „Samþykkt“ og uppfærir vaktaskipulagið samkvæmt beiðninni.
 
-## VK-2 — <heiti virknikröfu>
+### SP-2 — Höfnun beiðni
 
-- **Viðskiptaregla (auðkenni og tengill):** …
-- **Ferli eða verkefni notanda (auðkenni/tengill):** …
-- **Virknikrafa eða tilvísun í fyrirliggjandi kröfu:** …
-- **Viðbótarforsendur eða tilvísun í sameiginlegar forsendur:** …
+- **Sannreynir:** VK-1
+- **Gefið:** Starfsmaður hefur sent afleysingabeiðni sem er í stöðunni „Í bið“.
+- **Þegar:** Stjórnandi hafnar beiðninni.
+- **Þá:** Kerfið breytir stöðunni í „Hafnað“ og vaktaskipulagið helst óbreytt.
 
-### SP-3 — leyfilegt eða gilt tilvik
+## VK-2 — Koma í veg fyrir árekstur vakta
+
+- **Viðskiptaregla:** VR-2
+- **Ferli:** F-1 — Beiðnir um vaktaskipti og afleysingar.
+- **Virknikrafa:** Þegar starfsmaður óskar eftir að taka við vakt skal kerfið athuga hvort vaktin skarist tímalega við aðra úthlutaða vakt hans. Ef enginn árekstur er til staðar skal kerfið leyfa að beiðnin sé send. Ef vaktirnar skarast skal kerfið hafna beiðninni og birta skilaboðin „Þessi vakt skarast við aðra vakt hjá þér.“
+- **Viðbótarforsendur:** Upphafs- og lokatími vakta eru skráðir í kerfinu.
+
+### SP-3 — Leyfilegt tilvik
 
 - **Sannreynir:** VK-2
-- **Gefið:** …
-- **Þegar:** …
-- **Þá:** …
+- **Gefið:** Starfsmaður er með úthlutaða vakt frá kl. 08:00 til 12:00.
+- **Þegar:** Starfsmaður óskar eftir að taka við vakt frá kl. 13:00 til 17:00 sama dag.
+- **Þá:** Kerfið finnur engan árekstur og leyfir starfsmanninum að senda beiðnina.
 
-### SP-4 — óleyfilegt tilvik eða viðeigandi jaðartilvik
+### SP-4 — Óleyfilegt tilvik
 
 - **Sannreynir:** VK-2
-- **Gefið:** …
-- **Þegar:** …
-- **Þá:** …
+- **Gefið:** Starfsmaður er með úthlutaða vakt frá kl. 08:00 til 12:00.
+- **Þegar:** Starfsmaður óskar eftir að taka við vakt frá kl. 10:00 til 14:00 sama dag.
+- **Þá:** Kerfið hafnar beiðninni og birtir skilaboðin „Þessi vakt skarast við aðra vakt hjá þér.“
